@@ -1,6 +1,9 @@
 {
   "Home": {
-    "title": "Página inicial",
-    "description": "Bem-vindo a página inicial do site"
+    "home": "Início",
+    "about": "Sobre",
+    "skills": "Skills",
+    "projects": "Projectos",
+    "contact": "Contato"
   }
 }

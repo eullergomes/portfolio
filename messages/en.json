@@ -1,6 +1,9 @@
 {
   "Home": {
-    "title": "Home page",
-    "description": "Welcome to home page"
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
   }
 }
