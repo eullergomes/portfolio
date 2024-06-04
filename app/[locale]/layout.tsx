@@ -12,7 +12,19 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: 'Euller Gomes | Dev Full Stack',
   description:
-    'Portfólio de Euller Gomes, Desenvolvedor Full Stack, apaixonado por tecnologia e com foco em desenvolver em alta performance. Saiba mais sobre mim e meus projetos.'
+    'Portfólio de Euller Gomes, Desenvolvedor Full Stack, apaixonado por tecnologia e com foco em desenvolver em alta performance. Saiba mais sobre mim e meus projetos.',
+  authors: [{ name: 'Euller Gomes' }],
+  creator: 'Euller Gomes',
+  keywords: ['Portfólio', 'Euller', 'Desenvolvedor'],
+  applicationName: 'Euller Gomes - Portfólio',
+  openGraph: {
+    type: 'website',
+    locale: 'pt_BR',
+    alternateLocale: 'en_US',
+    title: 'Euller Gomes | Dev Full Stack',
+    description:
+      'Portfólio de Euller Gomes, Desenvolvedor Full Stack, apaixonado por tecnologia e com foco em desenvolver em alta performance. Saiba mais sobre mim e meus projetos.'
+  }
 };
 
 export default function RootLayout({
