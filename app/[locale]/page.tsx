@@ -1,7 +1,8 @@
 import { useTranslations } from 'next-intl';
 import Header from '../_components/header/Header';
+import Home from '../_components/home/Home';
 
-const Home = () => {
+const HomePage = () => {
   const t = useTranslations('Home');
   return (
     <>
@@ -13,13 +14,11 @@ const Home = () => {
         contact={t('contact')}
       />
 
-      {/* <main className="main">
-        <Home /> 
-        <h1>Hello world</h1>
-        <i className="uil uil-instagram"></i>
-      </main> */}
+      <main className="main">
+        <Home />
+      </main>
     </>
   );
 };
 
-export default Home;
+export default HomePage;
