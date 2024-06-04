@@ -22,6 +22,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+        ></link>
+      </head>
       <body className={poppins.className}>{children}</body>
     </html>
   );

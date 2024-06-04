@@ -1,14 +1,5 @@
 'use client';
 
-import {
-  FileText,
-  Home,
-  Image,
-  LayoutGrid,
-  SendHorizonal,
-  UserRound,
-  X
-} from 'lucide-react';
 import './header.css';
 import { useState } from 'react';
 
@@ -35,44 +26,43 @@ const Header = ({ home, about, skills, projects, contact }: HeaderProps) => {
           <ul className="nav__list grid">
             <li className="nav__item">
               <a href="#home" className="nav__link active-link">
-                <Home className="nav__icon" /> {home}
+                <i className="uil uil-apps nav__icon"></i> {home}
               </a>
             </li>
 
             <li className="nav__item">
               <a href="#about" className="nav__link">
-                <UserRound className="nav__icon" /> {about}
+                <i className="uil uil-user nav__icon"></i> {about}
               </a>
             </li>
 
             <li className="nav__item">
               <a href="#skills" className="nav__link">
-                <FileText className="nav__icon" /> {skills}
+                <i className="uil uil-file-alt nav__icon"></i> {skills}
               </a>
             </li>
 
             <li className="nav__item">
               <a href="#projecs" className="nav__link">
-                <Image className="nav__icon" /> {projects}
+                <i className="uil uil-image-v nav__icon"></i> {projects}
               </a>
             </li>
 
             <li className="nav__item">
               <a href="#contact" className="nav__link">
-                <SendHorizonal className="nav__icon" /> {contact}
+                <i className="uil uil-message nav__icon"></i> {contact}
               </a>
             </li>
           </ul>
 
-          <i onClick={() => showMenu(!Toggle)}>
-            <X className="nav__close" />
-          </i>
+          <i
+            className="uil uil-times nav__close"
+            onClick={() => showMenu(!Toggle)}
+          ></i>
         </div>
 
         <div className="nav__toggle" onClick={() => showMenu(!Toggle)}>
-          <i>
-            <LayoutGrid />
-          </i>
+          <i className="uil uil-apps"></i>
         </div>
       </nav>
     </header>
