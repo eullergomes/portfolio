@@ -1,6 +1,8 @@
 import { useTranslations } from 'next-intl';
 import Header from '../_components/header/Header';
 import Home from '../_components/home/Home';
+import About from '../_components/about/About';
+import Skills from '../_components/skills/Skills';
 
 const HomePage = () => {
   const t = useTranslations('Home');
@@ -16,6 +18,8 @@ const HomePage = () => {
 
       <main className="main">
         <Home />
+        <About />
+        <Skills />
       </main>
     </>
   );
