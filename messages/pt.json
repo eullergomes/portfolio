@@ -4,6 +4,9 @@
     "about": "Sobre",
     "skills": "Skills",
     "projects": "Projectos",
-    "contact": "Contato"
+    "contact": "Contato",
+    "responsibility": "Desenvolvedor Full Stack",
+    "responsibility-description": "Desenvolvedor Full Stack com experiência em projetos de desenvolvimento web e mobile. Atualmente trabalhando com tecnologias como React, Node.js, Next.js, React Native e TypeScript.",
+    "say": "Diga Olá"
   }
 }
