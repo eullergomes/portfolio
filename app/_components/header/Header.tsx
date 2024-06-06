@@ -1,5 +1,6 @@
 'use client';
 
+import ButtonLanguage from './ButtonLanguage';
 import './header.css';
 import { useState } from 'react';
 
@@ -53,6 +54,14 @@ const Header = ({ home, about, skills, projects, contact }: HeaderProps) => {
                 <i className="uil uil-message nav__icon"></i> {contact}
               </a>
             </li>
+
+            <li className="nav__item" id="swap-lang">
+              <a href="#contact" className="nav__link">
+                <ButtonLanguage />
+              </a>
+            </li>
+
+            {/* <ButtonLanguage /> */}
           </ul>
 
           <i

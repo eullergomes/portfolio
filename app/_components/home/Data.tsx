@@ -1,12 +1,16 @@
 import { useTranslations } from 'next-intl';
+import Introduction from './Introduction';
 
 const Data = () => {
   const t = useTranslations('Home');
   return (
     <div className="home__data">
-      <h1 className="home__title">Euller Gomes</h1>
+      <h3>{t('i_am')}</h3>
+      <Introduction
+        responsibility={t('responsibility')}
+        education={t('education')}
+      />
 
-      <h3 className="home__subtitle">{t('responsibility')}</h3>
       <p className="home__description">{t('responsibility-description')}</p>
       <a href="#contact" className="button button--flex">
         {t('say')}

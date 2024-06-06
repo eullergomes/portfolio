@@ -111,6 +111,19 @@
   .nav__toggle {
     display: block;
   }
+
+  #swap-lang {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+  }
+}
+
+#swap-lang {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* For small devices */
