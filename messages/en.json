@@ -5,7 +5,9 @@
     "skills": "Skills",
     "projects": "Projects",
     "contact": "Contact",
+    "i_am": "Hi, I'm",
     "responsibility": "Full Stack Developer",
+    "education": "Computer Science Student",
     "responsibility-description": "Full Stack Developer with experience in web and mobile development projects. Currently working with technologies such as React, Node.js, Next.js, React Native and TypeScript.",
     "say": "Say Hello"
   }
