@@ -3,6 +3,7 @@ import Header from '../_components/header/Header';
 import Home from '../_components/home/Home';
 import About from '../_components/about/About';
 import Skills from '../_components/skills/Skills';
+import Contact from '../_components/contact/Contact';
 
 const HomePage = () => {
   const t = useTranslations('Home');
@@ -20,6 +21,7 @@ const HomePage = () => {
         <Home />
         <About />
         <Skills />
+        <Contact />
       </main>
     </>
   );
