@@ -9,6 +9,7 @@
     "responsibility": "Desenvolvedor Full Stack",
     "education": "Estudante de Ciência da Computação",
     "responsibility-description": "Desenvolvedor Full Stack com experiência em projetos de desenvolvimento web e mobile. Atualmente trabalhando com tecnologias como React, Node.js, Next.js, React Native e TypeScript.",
-    "say": "Diga Olá"
+    "say": "Diga Olá",
+    "send-message": "Enviar Mensagem"
   }
 }
