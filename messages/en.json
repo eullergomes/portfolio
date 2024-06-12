@@ -10,6 +10,27 @@
     "education": "Computer Science Student",
     "responsibility-description": "Full Stack Developer with experience in web and mobile development projects. Currently working with technologies such as React, Node.js, Next.js, React Native and TypeScript.",
     "say": "Say Hello",
-    "send-message": "Send Message"
+    "get-contact": "Get in touch",
+    "contact-me": "Contact me",
+    "write-me": "write me",
+    "demand": "Tell me your demand",
+    "talk_to_me": "Talk to me",
+    "required_name": "Name is required",
+    "short_name": "Very short name",
+    "long_name": "Very long name",
+    "required_email": "Email is required!",
+    "invalid_email": "Invalid email address!",
+    "short_email": "Very short email",
+    "long_email": "Email too long",
+    "required_message": "The message is required!",
+    "short_message": "Very short message",
+    "long_message": "Message too long",
+    "success_message": "Message sent successfully!",
+    "input_name": "Name",
+    "placeholder_name": "Enter your name",
+    "placeholder_email": "Enter your email",
+    "description_message": "Describe your project request here",
+    "submit_button": "Submit",
+    "loader_button": "Sending..."
   }
 }
