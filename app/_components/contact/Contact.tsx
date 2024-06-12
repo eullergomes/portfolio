@@ -22,7 +22,10 @@ const Contact = () => {
     placeholder_email: t('placeholder_email'),
     description_message: t('description_message'),
     submit_button: t('submit_button'),
-    loader_button: t('loader_button')
+    loader_button: t('loader_button'),
+    environment_variable_error: t('environment_variable_error'),
+    error_email: t('error_email'),
+    error_emailjs: t('error_emailjs')
   };
 
   return (
@@ -44,7 +47,11 @@ const Contact = () => {
                 eullertexeira@gmail.com
               </span>
 
-              <a href="eullertexeira@gmail.com" className="contact__button">
+              <a
+                href="eullertexeira@gmail.com"
+                className="contact__button"
+                target="_black"
+              >
                 {t('write-me')}{' '}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
@@ -60,6 +67,8 @@ const Contact = () => {
               <a
                 href="https://api.whatsapp.com/send?phone=98985334778&text=Olá, vim falar com você"
                 className="contact__button"
+                target="_blank"
+                rel="noreferrer"
               >
                 {t('write-me')}{' '}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
@@ -76,6 +85,8 @@ const Contact = () => {
               <a
                 href="https://www.linkedin.com/in/eullergomes/"
                 className="contact__button"
+                target="_blank"
+                rel="noreferrer"
               >
                 {t('write-me')}{' '}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>

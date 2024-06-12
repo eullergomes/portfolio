@@ -31,6 +31,9 @@
     "placeholder_email": "Digite seu e-mail",
     "description_message": "Descreva seu pedido de projeto aqui",
     "submit_button": "Enviar",
-    "loader_button": "Enviando..."
+    "loader_button": "Enviando...",
+    "environment_variable_error": "Error sending email. Environment variables are not set correctly.",
+    "error_email": "Erro ao enviar o formulário",
+    "error_emailjs": "servidor fora do ar"
   }
 }

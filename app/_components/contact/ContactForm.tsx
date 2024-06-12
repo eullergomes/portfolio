@@ -3,38 +3,13 @@
 import React, { useState } from 'react';
 import { Toaster, toast } from 'sonner';
 import InputError from './InputError';
-
-interface ContactFormProps {
-  required_name: string;
-  short_name: string;
-  long_name: string;
-  required_email: string;
-  invalid_email: string;
-  short_email: string;
-  long_email: string;
-  required_message: string;
-  short_message: string;
-  long_message: string;
-  success_message: string;
-  input_name: string;
-  placeholder_name: string;
-  placeholder_email: string;
-  description_message: string;
-  submit_button: string;
-  loader_button: string;
-}
-
-interface FormData {
-  name: string;
-  email: string;
-  message: string;
-}
-
-interface FormErrors {
-  name?: string;
-  email?: string;
-  message?: string;
-}
+import emailjs from '@emailjs/browser';
+import {
+  ContactFormProps,
+  FormData,
+  FormErrors,
+  TemplateParams
+} from '@/app/_types/FormInput';
 
 const Form: React.FC<ContactFormProps> = ({
   required_name,
@@ -53,7 +28,10 @@ const Form: React.FC<ContactFormProps> = ({
   placeholder_email,
   description_message,
   submit_button,
-  loader_button
+  loader_button,
+  environment_variable_error,
+  error_email,
+  error_emailjs
 }) => {
   const [formData, setFormData] = useState<FormData>({
     name: '',
@@ -90,7 +68,7 @@ const Form: React.FC<ContactFormProps> = ({
         return required_message;
       } else if (value.length < 10) {
         return short_message;
-      } else if (value.length > 500) {
+      } else if (value.length > 700) {
         return long_message;
       }
     }
@@ -108,10 +86,34 @@ const Form: React.FC<ContactFormProps> = ({
     });
   };
 
+  const sendEmail = async (templateParams: TemplateParams) => {
+    try {
+      const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+      const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+      const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+
+      if (!serviceID || !templateID || !publicKey) {
+        throw new Error(environment_variable_error);
+      }
+
+      const response = await emailjs.send(
+        serviceID as string,
+        templateID as string,
+        templateParams,
+        publicKey
+      );
+
+      return response;
+    } catch (error) {
+      throw new Error(`${error_email}: ${error}`);
+    }
+  };
+
   const handleSubmit = async (
     e: React.FormEvent<HTMLFormElement>
   ): Promise<void> => {
     e.preventDefault();
+
     const newErrors: FormErrors = {};
     (Object.keys(formData) as Array<keyof FormData>).forEach((fieldName) => {
       const fieldError = validateField(fieldName, formData[fieldName]);
@@ -122,11 +124,28 @@ const Form: React.FC<ContactFormProps> = ({
 
     if (Object.keys(newErrors).length === 0) {
       setIsSubmitting(true);
-      setTimeout(() => {
+
+      const templateParams = {
+        from_name: formData.name,
+        email: formData.email,
+        message: formData.message
+      };
+
+      try {
+        const response = await sendEmail(templateParams);
+
+        if (response.status === 200) {
+          toast.success(success_message);
+          setFormData({ name: '', email: '', message: '' });
+        } else {
+          toast.error(`${error_email}: ${error_emailjs}`);
+        }
+      } catch (error) {
+        console.error(error);
+        toast.error(error as string);
+      } finally {
         setIsSubmitting(false);
-        toast.success(success_message);
-        setFormData({ name: '', email: '', message: '' });
-      }, 2000);
+      }
     } else {
       setErrors(newErrors);
     }

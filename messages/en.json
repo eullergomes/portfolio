@@ -31,6 +31,9 @@
     "placeholder_email": "Enter your email",
     "description_message": "Describe your project request here",
     "submit_button": "Submit",
-    "loader_button": "Sending..."
+    "loader_button": "Sending...",
+    "environment_variable_error": "Error in the environment variables for sending emails via form. Contact your site administrator to fix.",
+    "error_email": "Error submitting form",
+    "error_emailjs": "server down, try again later"
   }
 }
