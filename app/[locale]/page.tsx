@@ -4,6 +4,8 @@ import Home from '../_components/home/Home';
 import About from '../_components/about/About';
 import Skills from '../_components/skills/Skills';
 import Contact from '../_components/contact/Contact';
+import Footer from '../_components/footer/Footer';
+import ScrollUp from '../_components/scrollup/ScrollUp';
 
 const HomePage = () => {
   const t = useTranslations('Home');
@@ -23,6 +25,8 @@ const HomePage = () => {
         <Skills />
         <Contact />
       </main>
+      <Footer />
+      <ScrollUp />
     </>
   );
 };

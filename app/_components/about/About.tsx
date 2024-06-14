@@ -1,9 +1,29 @@
+'use client';
+
 import './About.css';
 import AboutImg from '../../assets/img/euller_profile.webp';
 import Image from 'next/image';
 import Info from './Info';
 
+const PDF_FILE_URL = `${window.location.origin}/cv_euller_gomes.pdf`;
+
 const About = () => {
+  const downloadFileAtUrl = (url: string) => {
+    fetch(url)
+      .then((response) => response.blob())
+      .then((blob) => {
+        const blobURL = window.URL.createObjectURL(new Blob([blob]));
+
+        const fileName = url.split('/').pop();
+        const aTag = document.createElement('a');
+        aTag.href = blobURL;
+        aTag.setAttribute('download', fileName as string);
+        document.body.appendChild(aTag);
+        aTag.click();
+        aTag.remove();
+      });
+  };
+
   return (
     <section className="about section" id="about">
       <h2 className="section__title">Sobre mim</h2>
@@ -27,8 +47,12 @@ const About = () => {
             desenvolvimento de aplicações web com React, Next.js, Node.js,
             TypeScript, JavaScript, HTML, CSS e Tailwind.
           </p>
-
-          <a download="" href="" className="button button--flex">
+          <a
+            download=""
+            href=""
+            className="button button--flex"
+            onClick={() => downloadFileAtUrl(PDF_FILE_URL)}
+          >
             Download CV
             <svg
               className="button__icon"

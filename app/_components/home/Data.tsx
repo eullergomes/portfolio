@@ -6,10 +6,7 @@ const Data = () => {
   return (
     <div className="home__data">
       <h3>{t('i_am')}</h3>
-      <Introduction
-        responsibility={t('responsibility')}
-        education={t('education')}
-      />
+      <Introduction responsibility={t('responsibility')} />
 
       <p className="home__description">{t('responsibility-description')}</p>
       <a href="#contact" className="button button--flex">

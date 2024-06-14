@@ -4,15 +4,15 @@ import Typewriter from 'typewriter-effect';
 
 interface Prop {
   responsibility: string;
-  education: string;
+  education?: string;
 }
 
-const Introduction = ({ responsibility, education }: Prop) => {
+const Introduction = ({ responsibility }: Prop) => {
   return (
-    <h1>
+    <h1 className="home__tit">
       <Typewriter
         options={{
-          strings: ['Euller Gomes', responsibility, education],
+          strings: ['Euller Gomes', responsibility],
           autoStart: true,
           loop: true
         }}
