@@ -29,11 +29,11 @@ const Header = ({ home, about, skills, projects, contact }: HeaderProps) => {
       setActiveNav('#skills');
     }
 
-    // if (window.scrollY >= 1800) {
-    //   setActiveNav('#projects');
-    // }
-
     if (window.scrollY >= 1850) {
+      setActiveNav('#projects');
+    }
+
+    if (window.scrollY >= 2800) {
       setActiveNav('#contact');
     }
   });

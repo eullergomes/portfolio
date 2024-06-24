@@ -6,6 +6,7 @@ import Skills from '../_components/skills/Skills';
 import Contact from '../_components/contact/Contact';
 import Footer from '../_components/footer/Footer';
 import ScrollUp from '../_components/scrollup/ScrollUp';
+import Work from '../_components/work/Work';
 
 const HomePage = () => {
   const t = useTranslations('Home');
@@ -23,6 +24,7 @@ const HomePage = () => {
         <Home />
         <About />
         <Skills />
+        <Work />
         <Contact />
       </main>
       <Footer />

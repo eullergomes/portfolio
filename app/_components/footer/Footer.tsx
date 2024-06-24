@@ -56,7 +56,8 @@ const Footer = () => {
         </div>
 
         <span className="footer__copy">
-          &#169; 2024 Euller Gomes. Todos os direitos reservados
+          &#169; 2024 <a href="https://github.com/eullergomes">Euller Gomes</a>.
+          Todos os direitos reservados.
         </span>
       </div>
     </footer>
