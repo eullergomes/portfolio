@@ -1,6 +1,6 @@
 'use client';
 
-import './About.css';
+import './about.css';
 import AboutImg from '../../assets/img/euller_profile.webp';
 import Image from 'next/image';
 import Info from './Info';
