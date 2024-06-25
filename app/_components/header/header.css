@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--body-color);
+  background-color: transparent;
 }
 
 .nav {
@@ -32,9 +32,9 @@
   align-items: center;
   justify-content: center;
   font-size: var(--small-font-size);
-  color: var(--title-color);
+  color: var(--text-color);
   font-weight: var(--font-medium);
-  transition: .3s;
+  /* transition: .3s; */
 }
 
 .nav__icon,
@@ -46,12 +46,15 @@
 /* Active link */
 .active-link,
 .nav__link:hover {
-  border-bottom: 1px solid red;
+  color: var(--title-color);
+  padding-bottom: 4px;
+  border-bottom: 2px solid #34D399;
 }
 
 /* Change background Header */
 .scroll-header {
-  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: var(--shadow-default);
+  background: #00000050;
 }
 
 /*============= BREAKPOINTS =============*/
@@ -60,6 +63,7 @@
   .header {
     top: initial;
     bottom: 0;
+    padding: .5rem;
   }
 
   .nav {
@@ -99,7 +103,7 @@
     bottom: .5rem;
     font-size: 1.5rem;
     cursor: pointer;
-    color: var(--title-color);
+    color: var(--text-color);
   }
 
   .nav__close:hover {

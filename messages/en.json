@@ -6,9 +6,17 @@
     "projects": "Projects",
     "contact": "Contact",
     "i_am": "Hi, I'm",
-    "responsibility": "Full Stack Developer",
     "education": "Computer Science Student",
     "responsibility-description": "Currently a Computer Science student, I decided to pursue my career as a Full Stack developer with a focus on developing robust and elegant applications with the best practices and technologies on the market.",
+    "about-me": "About me",
+    "introduction": "My introduction",
+    "experience": "Experience",
+    "exp-years": "+2 years",
+    "completed": "Completed",
+    "compl-projects": "+20 Projects",
+    "support": "Support",
+    "about-description": "Full Stack Developer with experience in developing robust and scalable web applications. Currently, I'm focused on developing web applications with React, Next.js, Node.js, TypeScript, JavaScript, HTML, CSS and Tailwind.",
+    "latest-projects": "Latest projects",
     "say": "Say Hello",
     "get-contact": "Get in touch",
     "contact-me": "Contact me",
@@ -34,6 +42,7 @@
     "loader_button": "Sending...",
     "environment_variable_error": "Error in the environment variables for sending emails via form. Contact your site administrator to fix.",
     "error_email": "Error submitting form",
-    "error_emailjs": "server down, try again later"
+    "error_emailjs": "server down, try again later",
+    "copywriter": " All rights reserved."
   }
 }

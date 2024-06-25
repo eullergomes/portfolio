@@ -2,8 +2,8 @@ import Work1 from '../../assets/img/fsw-food.webp';
 import Work2 from '../../assets/img/fsw-barber.webp';
 import Work3 from '../../assets/img/find-book.webp';
 import Work4 from '../../assets/img/expensive-tracker.webp';
-import Work6 from '../../assets/img/dev-burguer.webp';
-import Work5 from '../../assets/img/pokedex.webp';
+import Work6 from '../../assets/img/pokedex.webp';
+import Work5 from '../../assets/img/dev-burguer.webp';
 
 export const projectsData = [
   {
@@ -12,7 +12,7 @@ export const projectsData = [
     title: 'FSW Food',
     description:
       'Sistema de delivery de comida que permite aos usuários fazerem pedidos em qualquer restaurante disponível no app.',
-    link: 'https://fswfood-euller-gomes-projects.vercel.app/'
+    link: 'https://fswfood-euller-gomes-projects.vercel.app'
   },
   {
     id: 2,
@@ -28,29 +28,30 @@ export const projectsData = [
     title: 'Find Book',
     description:
       'Encontrar livros de acordo com os gostos do usuário usando inteligência artificial.',
-    link: 'https://www.google.com'
+    link: 'https://github.com/eullergomes?tab=repositories'
   },
   {
     id: 4,
     image: Work4,
     title: 'Expensive Tracker',
     description: 'Sistema de controle financeiro pessoal.',
-    link: 'https://expense-tracker-iota-vert.vercel.app/'
+    link: 'https://expense-tracker-iota-vert.vercel.app'
   },
   {
     id: 5,
     image: Work5,
-    title: 'Dev Burguer',
+    title: 'Pokedéx',
     description:
-      'Site de hamburgueria com carrinho de compras e finalização de pedidos no WhatsApp.',
-    link: 'https://www.google.com'
+      'Pokedex com informações sobre os pokemons, suas habilidades e tipos.',
+    link: 'https://github.com/eullergomes/pokedex'
   },
   {
     id: 6,
     image: Work6,
-    title: 'Pokedéx',
+    title: 'Dev Burguer',
     description:
-      'Pokedex com informações sobre os pokemons, suas habilidades e tipos.',
-    link: 'https://www.google.com'
-  }
+      'Site de hamburgueria com carrinho de compras e finalização de pedidos no WhatsApp.',
+    link: 'https://github.com/eullergomes/frontend-challenges/tree/master/cardapio'
+  },
+  
 ];

@@ -14,7 +14,7 @@ const ButtonLanguage = () => {
   };
 
   return (
-    <div className="dropdown">
+    <div className="dropdown" id="dropdown">
       <button className="dropdown-btn" onClick={handleClick}>
         <i id="planet" className="uil uil-globe"></i>
       </button>

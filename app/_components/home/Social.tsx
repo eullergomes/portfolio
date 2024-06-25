@@ -1,32 +1,19 @@
+import { socialData } from './social-data';
+
 const Social = () => {
   return (
     <div className="home__social">
-      <a
-        href="https://www.linkedin.com/in/eullergomes/"
-        className="home__social-icon"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <i className="uil uil-linkedin"></i>
-      </a>
-
-      <a
-        href="https://github.com/eullergomes"
-        className="home__social-icon"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <i className="uil uil-github-alt"></i>
-      </a>
-
-      <a
-        href="https://instagram.com/eullertz"
-        className="home__social-icon"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <i className="uil uil-instagram"></i>
-      </a>
+      {socialData.map((item) => (
+        <a
+          key={item.id}
+          href={item.href}
+          className="home__social-icon"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <i className={item.class_icon}></i>
+        </a>
+      ))}
     </div>
   );
 };

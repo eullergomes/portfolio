@@ -2,17 +2,12 @@
 
 import Typewriter from 'typewriter-effect';
 
-interface Prop {
-  responsibility: string;
-  education?: string;
-}
-
-const Introduction = ({ responsibility }: Prop) => {
+const Introduction = () => {
   return (
-    <h1 className="home__tit">
+    <h1 className="home__title">
       <Typewriter
         options={{
-          strings: ['Euller Gomes', responsibility],
+          strings: ['Euller Gomes', 'Dev. Full Stack'],
           autoStart: true,
           loop: true
         }}

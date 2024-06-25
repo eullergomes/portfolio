@@ -6,9 +6,17 @@
     "projects": "Projetos",
     "contact": "Contato",
     "i_am": "Oi, sou",
-    "responsibility": "Desenvolvedor Full Stack",
     "education": "Estudante de Ciência da Computação",
     "responsibility-description": "Atualmente estudante de Ciência da Computação, decidi seguir minha carreira como desenvolvedor Full Stack com foco em desenvolver aplicações robustas e elegantes com as melhores práticas e tecnologias do mercado.",
+    "about-me": "Sobre mim",
+    "introduction": "Minha apresentação",
+    "experience": "Experiência",
+    "exp-years": "+2 anos",
+    "completed": "Completei",
+    "compl-projects": "+20 Projetos",
+    "support": "Suporte",
+    "about-description": "desenvolvedor Full Stack com experiência em desenvolvimento de aplicações web robustas e escaláveis. Atualmente, estou focado em desenvolvimento de aplicações web com React, Next.js, Node.js, TypeScript, JavaScript, HTML, CSS e Tailwind.",
+    "latest-projects": "Projetos mais recentes",
     "say": "Diga Olá",
     "get-contact": "Entrar em contato",
     "contact-me": "Contate-me",
@@ -34,6 +42,7 @@
     "loader_button": "Enviando...",
     "environment_variable_error": "Error sending email. Environment variables are not set correctly.",
     "error_email": "Erro ao enviar o formulário",
-    "error_emailjs": "servidor fora do ar"
+    "error_emailjs": "servidor fora do ar",
+    "copywriter": " Todos os direitos reservados"
   }
 }

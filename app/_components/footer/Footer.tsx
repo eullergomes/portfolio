@@ -1,6 +1,8 @@
+import { useTranslations } from 'next-intl';
 import './footer.css';
 
 const Footer = () => {
+  const t = useTranslations('Home');
   return (
     <footer className="footer">
       <div className="footer__container container">
@@ -9,7 +11,7 @@ const Footer = () => {
         <ul className="footer__list">
           <li>
             <a href="#about" className="footer__link">
-              Sobre
+              {t('about')}
             </a>
           </li>
 
@@ -21,7 +23,7 @@ const Footer = () => {
 
           <li>
             <a href="#projects" className="footer__link">
-              Projetos
+              {t('projects')}
             </a>
           </li>
         </ul>
@@ -57,7 +59,7 @@ const Footer = () => {
 
         <span className="footer__copy">
           &#169; 2024 <a href="https://github.com/eullergomes">Euller Gomes</a>.
-          Todos os direitos reservados.
+          {t('copywriter')}
         </span>
       </div>
     </footer>

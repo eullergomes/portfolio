@@ -1,5 +1,5 @@
 .footer {
-  background-color: var(--container__color);
+  background-color: #030712;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -7,12 +7,12 @@
   padding: 2rem 0 6rem;
 }
 
-.footer__title,
 .footer__link {
-  color: var(--title-color);
+  color: var(--text-color);
 }
 
 .footer__title {
+  color: var(--title-color);
   text-align: center;
   margin-bottom: var(--mb-2);
 }
@@ -35,8 +35,9 @@
 }
 
 .footer__social-link {
-  background-color: var(--title-color);
-  color: var(--container-color);
+  background-color: var(--container-color);
+  border: var(--border-default);
+  color: var(--title-color);
   font-size: 1.125rem;
   padding: 0.4rem 0.68rem;
   border-radius: 0.5rem;
@@ -50,7 +51,7 @@
 .footer__copy {
   display: block;
   margin-top: 4.5rem;
-  color: var(--title-color);
+  color: var(--text-color);
   text-align: center;
   font-size: var(--smaller-font-size);
 }

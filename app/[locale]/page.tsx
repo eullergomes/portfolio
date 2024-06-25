@@ -22,7 +22,11 @@ const HomePage = () => {
 
       <main className="main">
         <Home />
-        <About />
+        <About
+          about={t('about')}
+          introduction={t('introduction')}
+          about_description={t('about-description')}
+        />
         <Skills />
         <Work />
         <Contact />
