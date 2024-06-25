@@ -52,6 +52,5 @@ export const projectsData = [
     description:
       'Site de hamburgueria com carrinho de compras e finalização de pedidos no WhatsApp.',
     link: 'https://github.com/eullergomes/frontend-challenges/tree/master/cardapio'
-  },
-  
+  }
 ];
