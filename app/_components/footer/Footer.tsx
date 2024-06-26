@@ -62,7 +62,13 @@ const Footer = () => {
 
         <span className="footer__copy">
           &#169; 2024{' '}
-          <a href="https://github.com/eullergomes" className="footer__creator">
+          <a
+            href="https://github.com/eullergomes"
+            aria-label="Criador do site"
+            target="_blank"
+            className="footer__creator"
+            rel="noreferrer"
+          >
             Euller Gomes
           </a>
           .{t('copywriter')}

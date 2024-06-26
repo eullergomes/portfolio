@@ -58,7 +58,14 @@
 }
 
 .footer__creator {
-  color: #fff;
+  color: var(--link-color); /* Ajuste para uma cor com bom contraste */
+  text-decoration: underline; /* Adiciona underline ao link */
+}
+
+/* Adicione uma variação para o estado focado do link */
+.footer__creator:focus, .footer__creator:hover {
+  color: var(--link-hover-color); /* Ajuste a cor para o estado hover/focus */
+  outline: 2px solid var(--link-focus-outline-color); /* Adiciona um contorno para foco */
 }
 
 /*=============== BREAKPOINTS ===============*/

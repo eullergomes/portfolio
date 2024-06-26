@@ -14,8 +14,12 @@ const ButtonLanguage = () => {
   };
 
   return (
-    <div className="dropdown" id="dropdown" aria-label="Abrir menu dropdown">
-      <button className="dropdown-btn" onClick={handleClick}>
+    <div className="dropdown" id="dropdown">
+      <button
+        className="dropdown-btn"
+        aria-label="Abrir menu dropdown"
+        onClick={handleClick}
+      >
         <i id="planet" className="uil uil-globe"></i>
       </button>
       {isOpen && (
