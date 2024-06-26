@@ -42,7 +42,7 @@ const Header = ({ home, about, skills, projects, contact }: HeaderProps) => {
     };
 
     window.addEventListener('scroll', handleScroll);
-    
+
     // Cleanup event listener on component unmount
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -129,7 +129,7 @@ const Header = ({ home, about, skills, projects, contact }: HeaderProps) => {
             </li>
 
             <li className="nav__item" id="swap-lang">
-              <a className="nav__link">
+              <a id="nav__link-lang">
                 <ButtonLanguage />
               </a>
             </li>

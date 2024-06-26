@@ -1,13 +1,8 @@
-@import url('https://unicons.iconscout.com/release/v4.0.8/css/line.css');
-
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3rem;
 
   /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  --hue: 0;
-  --sat: 0%;
   --title-color: #fff;
   --text-color: #9CA3AF;
   --body-color: #111827; 
@@ -19,7 +14,7 @@
   /*.5rem = 8px | 1rem = 16px ...*/
   --extra-big-font-size: 4rem;
   --big-font-size: 3.5rem;
-  --h1-font-size: 2.25rem;
+  --h1-font-size: 2.5rem;
   --h2-font-size: 1.5rem;
   --h3-font-size: 1.25rem;
   --normal-font-size: 1rem;
@@ -205,9 +200,6 @@ img {
   .section__subtitle {
     margin-bottom: var(--mb-3);
   }
-}
-
-@media screen and (max-width: 576px) {
 }
 
 /* For small devices */

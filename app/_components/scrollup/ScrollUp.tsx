@@ -23,7 +23,7 @@ const ScrollUp = () => {
   }, []);
 
   return (
-    <a href="#" className="scrollup">
+    <a href="#" className="scrollup" aria-label="Voltar para o topo da página">
       <i className="uil uil-arrow-up scrollup__icon"></i>
     </a>
   );

@@ -6,7 +6,11 @@ const Data = () => {
   return (
     <div className="home__data">
       <h3 style={{ color: '#34D399' }}>{t('i_am')}</h3>
-      <Introduction />
+
+      <h1 className="home__title">
+        <span className="sr-only">Euller Gomes - Desenvolvedor Full Stack</span>
+        <Introduction />
+      </h1>
 
       <p className="home__description">{t('responsibility-description')}</p>
       <a href="#contact" className="button button--flex">

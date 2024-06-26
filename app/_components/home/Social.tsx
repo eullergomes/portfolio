@@ -9,6 +9,7 @@ const Social = () => {
           href={item.href}
           className="home__social-icon"
           target="_blank"
+          aria-label={item.name}
           rel="noreferrer"
         >
           <i className={item.class_icon}></i>
