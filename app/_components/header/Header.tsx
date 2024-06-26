@@ -2,7 +2,7 @@
 
 import ButtonLanguage from './ButtonLanguage';
 import './header.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 interface HeaderProps {
   home: string;
@@ -14,29 +14,40 @@ interface HeaderProps {
 
 const Header = ({ home, about, skills, projects, contact }: HeaderProps) => {
   /*============= Change Background Header =============*/
-  window.addEventListener('scroll', () => {
-    const header = document.querySelector('.header');
-    if (window.scrollY >= 10) {
-      header?.classList.add('scroll-header');
-      setActiveNav('#home');
-    } else header?.classList.remove('scroll-header');
+  useEffect(() => {
+    const handleScroll = () => {
+      const header = document.querySelector('.header');
+      if (window.scrollY >= 10) {
+        header?.classList.add('scroll-header');
+        setActiveNav('#home');
+      } else {
+        header?.classList.remove('scroll-header');
+      }
 
-    if (window.scrollY >= 560) {
-      setActiveNav('#about');
-    }
+      if (window.scrollY >= 560) {
+        setActiveNav('#about');
+      }
 
-    if (window.scrollY >= 1250) {
-      setActiveNav('#skills');
-    }
+      if (window.scrollY >= 1250) {
+        setActiveNav('#skills');
+      }
 
-    if (window.scrollY >= 1850) {
-      setActiveNav('#projects');
-    }
+      if (window.scrollY >= 1850) {
+        setActiveNav('#projects');
+      }
 
-    if (window.scrollY >= 2800) {
-      setActiveNav('#contact');
-    }
-  });
+      if (window.scrollY >= 2800) {
+        setActiveNav('#contact');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   /*============= Toggle Menu =============*/
   const [Toggle, showMenu] = useState(false);

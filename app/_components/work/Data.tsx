@@ -2,8 +2,8 @@ import Work1 from '../../assets/img/fsw-food.webp';
 import Work2 from '../../assets/img/fsw-barber.webp';
 import Work3 from '../../assets/img/find-book.webp';
 import Work4 from '../../assets/img/expensive-tracker.webp';
-import Work6 from '../../assets/img/pokedex.webp';
 import Work5 from '../../assets/img/dev-burguer.webp';
+import Work6 from '../../assets/img/pokedex.webp';
 
 export const projectsData = [
   {
@@ -20,7 +20,7 @@ export const projectsData = [
     title: 'Barbershop',
     description:
       'Sistema de barbearia para facilitar o agendamento de serviços de barba e cabelo.',
-    link: 'https://github.com/eullergomes/barber_store'
+    link: 'https://barber-store-gamma.vercel.app'
   },
   {
     id: 3,
@@ -40,17 +40,17 @@ export const projectsData = [
   {
     id: 5,
     image: Work5,
-    title: 'Pokedéx',
+    title: 'Dev Burguer',
     description:
-      'Pokedex com informações sobre os pokemons, suas habilidades e tipos.',
-    link: 'https://github.com/eullergomes/pokedex'
+      'Site de hamburgueria com carrinho de compras e finalização de pedidos no WhatsApp.',
+    link: 'https://eullergomes.github.io/cardapio_digital'
   },
   {
     id: 6,
     image: Work6,
-    title: 'Dev Burguer',
+    title: 'Pokedéx',
     description:
-      'Site de hamburgueria com carrinho de compras e finalização de pedidos no WhatsApp.',
-    link: 'https://github.com/eullergomes/frontend-challenges/tree/master/cardapio'
+      'Pokedex com informações sobre os pokemons, suas habilidades e tipos.',
+    link: 'https://github.com/eullergomes/pokedex'
   }
 ];

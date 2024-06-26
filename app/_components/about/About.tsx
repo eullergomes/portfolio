@@ -4,6 +4,7 @@ import './about.css';
 import AboutImg from '../../assets/img/euller_profile.webp';
 import Image from 'next/image';
 import Info from './Info';
+import { useEffect, useState } from 'react';
 
 interface AboutProps {
   about: string;
@@ -11,9 +12,14 @@ interface AboutProps {
   about_description: string;
 }
 
-const PDF_FILE_URL = `${window.location.origin}/cv_euller_gomes.pdf`;
-
 const About = ({ about, introduction, about_description }: AboutProps) => {
+  const [pdfFileUrl, setPdfFileUrl] = useState('');
+
+  useEffect(() => {
+    const url = `${window.location.origin}/cv_euller_gomes_fullstack.pdf`;
+    setPdfFileUrl(url);
+  }, []);
+
   const downloadFileAtUrl = (url: string) => {
     fetch(url)
       .then((response) => response.blob())
@@ -48,11 +54,10 @@ const About = ({ about, introduction, about_description }: AboutProps) => {
           <Info />
 
           <p className="about__description">{about_description}</p>
-          <a
-            download=""
-            href=""
+          <button
             className="button button--flex"
-            onClick={() => downloadFileAtUrl(PDF_FILE_URL)}
+            onClick={() => downloadFileAtUrl(pdfFileUrl)}
+            disabled={!pdfFileUrl}
           >
             Download CV
             <svg
@@ -80,7 +85,7 @@ const About = ({ about, introduction, about_description }: AboutProps) => {
                 fill="var(--title-color)"
               ></path>
             </svg>
-          </a>
+          </button>
         </div>
       </div>
     </section>
