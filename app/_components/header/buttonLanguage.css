@@ -14,7 +14,7 @@
   border-radius: .5rem;
   position: absolute;
   background-color: #f1f1f1;
-  min-width: 80px;
+  min-width: 90px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -36,6 +36,7 @@
 
 .dropdown-content.show {
   display: block;
+  right: 0.3rem;
 }
 
 #planet {
@@ -53,6 +54,13 @@
   }
 }
 
-.opt {
+.drop-option {
   border-radius: 7px;
+}
+
+.link-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }

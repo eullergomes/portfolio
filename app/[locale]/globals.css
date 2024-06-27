@@ -42,6 +42,19 @@
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
+
+  /*========== Scrool bar ==========*/
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+  *::-webkit-scrollbar-track {
+    background-color: #374151;
+    border-radius: 5px;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: #34D399;
+    border-radius: 14px;
+  }
 }
 
 /* Responsive typography */

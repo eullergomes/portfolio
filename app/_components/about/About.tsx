@@ -42,7 +42,13 @@ const About = ({ about, introduction, about_description }: AboutProps) => {
       <span className="section__subtitle">{introduction}</span>
 
       <div className="about__container container grid">
-        <Image src={AboutImg} alt="Euller Gomes" className="about__img" />
+        <Image
+          src={AboutImg}
+          alt="Euller Gomes"
+          className="about__img"
+          width={1296}
+          height={1296}
+        />
 
         <div className="about__data">
           <Info />

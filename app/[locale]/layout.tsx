@@ -26,7 +26,7 @@ export const metadata: Metadata = {
       'Portfólio de Euller Gomes, Desenvolvedor Full Stack, apaixonado por tecnologia e com foco em desenvolver em alta performance. Saiba mais sobre mim e meus projetos.'
   },
   icons: {
-    icon: 'e-letter.svg'
+    icon: 'icon-green-e.svg'
   }
 };
 

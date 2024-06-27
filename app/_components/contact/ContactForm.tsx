@@ -155,18 +155,16 @@ const Form: React.FC<ContactFormProps> = ({
     <>
       <form className="contact__form" onSubmit={handleSubmit}>
         <div className="contact__form-div">
-          <div>
-            <label className="contact__form-tag">{input_name}</label>
-            <input
-              type="text"
-              name="name"
-              className="contact__form-input"
-              placeholder={placeholder_name}
-              value={formData.name}
-              onChange={handleChange}
-              style={{ borderColor: errors.name ? 'red' : '' }}
-            />
-          </div>
+          <label className="contact__form-tag">{input_name}</label>
+          <input
+            type="text"
+            name="name"
+            className="contact__form-input"
+            placeholder={placeholder_name}
+            value={formData.name}
+            onChange={handleChange}
+            style={{ borderColor: errors.name ? 'red' : '' }}
+          />
           {errors.name && <InputError error={errors.name} />}
         </div>
 
@@ -190,7 +188,7 @@ const Form: React.FC<ContactFormProps> = ({
             name="message"
             cols={30}
             rows={10}
-            className="contact__form-input"
+            className="contact__form-textarea"
             placeholder={description_message}
             value={formData.message}
             onChange={handleChange}

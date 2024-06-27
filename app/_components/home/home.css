@@ -56,7 +56,7 @@
 }
 
 .home__img {
-  background: url(../../assets/img/euller_profile.webp);
+  background-image: url('/images/euller_profile.webp');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -64,7 +64,8 @@
   justify-self: center;
   width: 300px;
   height: 300px;
-  animation: profile__animate 8s ease-in-out infinite 1s;
+  animation: profile__animate 8s ease-in-out infinite;
+  animation-fill-mode: both;
 }
 
 @keyframes profile__animate {

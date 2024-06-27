@@ -6,13 +6,13 @@ export const socialData = [
     name: 'Visite meu perfil no LinkedIn'
   },
   {
-    id: 1,
+    id: 2,
     href: 'https://github.com/eullergomes',
     class_icon: 'uil uil-github-alt',
     name: 'Visite meu perfil no Github'
   },
   {
-    id: 1,
+    id: 3,
     href: 'https://instagram.com/eullertz',
     class_icon: 'uil uil-instagram',
     name: 'Visite meu perfil no Instagram'

@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import './buttonLanguage.css';
 import { Link, usePathname } from '@/navigation';
+import Image from 'next/image';
 
 const ButtonLanguage = () => {
   const pathname = usePathname();
@@ -24,11 +25,29 @@ const ButtonLanguage = () => {
       </button>
       {isOpen && (
         <div className="dropdown-content show">
-          <Link className="opt" href={pathname} locale="pt">
-            pt-BR
+          <Link className="drop-option" href={pathname} locale="pt">
+            <div className="link-content">
+              <Image
+                src="/images/icons-brasil.webp"
+                alt="Brazil Flag"
+                width={20}
+                height={20}
+                quality={100}
+              />
+              <span>pt-BR</span>
+            </div>
           </Link>
-          <Link className="opt" href={pathname} locale="en">
-            en-US
+          <Link className="drop-option" href={pathname} locale="en">
+            <div className="link-content">
+              <Image
+                src="/images/icons-eua.webp"
+                alt="USA Flag"
+                width={20}
+                height={20}
+                quality={100}
+              />
+              <span>en-US</span>
+            </div>
           </Link>
         </div>
       )}
