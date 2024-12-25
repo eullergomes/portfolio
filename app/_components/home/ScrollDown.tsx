@@ -1,4 +1,8 @@
+import { useTranslations } from 'next-intl';
+
 const ScrollDown = () => {
+  const t = useTranslations('Home');
+
   return (
     <div className="home__scroll">
       <a href="#about" className="home__scroll-button button--flex">
@@ -37,7 +41,7 @@ const ScrollDown = () => {
             }}
           ></path>
         </svg>
-        <span className="home__scroll-name">Scroll Down</span>
+        <span className="home__scroll-name">{t('scroll_down')}</span>
         <i className="uil uil-arrow-down home__scroll-arrow"></i>
       </a>
     </div>

@@ -10,9 +10,15 @@ interface AboutProps {
   about: string;
   introduction: string;
   about_description: string;
+  download_cv: string;
 }
 
-const About = ({ about, introduction, about_description }: AboutProps) => {
+const About = ({
+  about,
+  introduction,
+  about_description,
+  download_cv
+}: AboutProps) => {
   const [pdfFileUrl, setPdfFileUrl] = useState('');
 
   useEffect(() => {
@@ -59,7 +65,7 @@ const About = ({ about, introduction, about_description }: AboutProps) => {
             onClick={() => downloadFileAtUrl(pdfFileUrl)}
             disabled={!pdfFileUrl}
           >
-            Download CV
+            {download_cv}
             <svg
               className="button__icon"
               xmlns="http://www.w3.org/2000/svg"

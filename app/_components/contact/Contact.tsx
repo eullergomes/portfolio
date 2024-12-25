@@ -20,6 +20,7 @@ const Contact = () => {
     input_name: t('input_name'),
     placeholder_name: t('placeholder_name'),
     placeholder_email: t('placeholder_email'),
+    placeholder_project: t('project'),
     description_message: t('description_message'),
     submit_button: t('submit_button'),
     loader_button: t('loader_button'),

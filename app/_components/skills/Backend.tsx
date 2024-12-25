@@ -4,6 +4,7 @@ import NodeIcon from '../../assets/img/node-js.svg';
 import PostgresIcon from '../../assets/img/postgresql.svg';
 import MongoIcon from '../../assets/img/mongodb-original.svg';
 import PrismaIcon from '../../assets/img/file-type-light-prisma.svg';
+import LaravelIcon from '../../assets/img/laravel.svg';
 
 const Backend = () => {
   return (
@@ -34,6 +35,9 @@ const Backend = () => {
         </div>
         <div className="skills__image">
           <Image src={PrismaIcon} alt="Prisma" width={45} height={45} />
+        </div>
+        <div className="skills__image">
+          <Image src={LaravelIcon} alt="Laravel" width={45} height={45} />
         </div>
         <div className="skills__image">
           <Image src={MongoIcon} alt="MongoDB" width={45} height={45} />

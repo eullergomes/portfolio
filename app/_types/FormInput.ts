@@ -32,6 +32,7 @@ export interface ContactFormProps {
   input_name: string;
   placeholder_name: string;
   placeholder_email: string;
+  placeholder_project: string;
   description_message: string;
   submit_button: string;
   loader_button: string;

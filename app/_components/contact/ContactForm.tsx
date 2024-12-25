@@ -26,6 +26,7 @@ const Form: React.FC<ContactFormProps> = ({
   input_name,
   placeholder_name,
   placeholder_email,
+  placeholder_project,
   description_message,
   submit_button,
   loader_button,
@@ -183,7 +184,7 @@ const Form: React.FC<ContactFormProps> = ({
         </div>
 
         <div className="contact__form-div contact__form-area">
-          <label className="contact__form-tag">Project</label>
+          <label className="contact__form-tag">{placeholder_project}</label>
           <textarea
             name="message"
             cols={30}

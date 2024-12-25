@@ -19,18 +19,16 @@ const HomePage = () => {
         projects={t('projects')}
         contact={t('contact')}
       />
-
-      <main className="main">
-        <Home />
-        <About
-          about={t('about')}
-          introduction={t('introduction')}
-          about_description={t('about-description')}
-        />
-        <Skills />
-        <Work />
-        <Contact />
-      </main>
+      <Home />
+      <About
+        about={t('about')}
+        introduction={t('introduction')}
+        about_description={t('about-description')}
+        download_cv={t('download-cv')}
+      />
+      <Skills />
+      <Work />
+      <Contact />
       <Footer />
       <ScrollUp />
     </>

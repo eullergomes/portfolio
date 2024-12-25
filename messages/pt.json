@@ -15,14 +15,17 @@
     "completed": "Completei",
     "compl-projects": "+20 Projetos",
     "support": "Suporte",
-    "about-description": "Desenvolvedor Full Stack com experiência em desenvolvimento de aplicações web robustas e escaláveis. Atualmente, estou focado em desenvolvimento de aplicações web com React, Next.js, Node.js, TypeScript, JavaScript, HTML, CSS e Tailwind.",
+    "about-description": "Desenvolvedor Full Stack com experiência em desenvolvimento de aplicações web robustas e escaláveis. Atualmente, estou focado em desenvolvimento de aplicações web com Next.js, React.js, Node.js, Laravel, TypeScript, JavaScript, HTML, CSS e Tailwind.",
+    "download-cv": "Baixar CV",
     "skills-description": "Minhas habilidades técnicas",
     "latest-projects": "Projetos mais recentes",
     "say": "Diga Olá",
+    "scroll_down": "Role para baixo",
     "get-contact": "Entrar em contato",
     "contact-me": "Contate-me",
     "talk_to_me": "Fale comigo",
     "write-me": "Falar comigo",
+    "project": "Projeto",
     "demand": "Me descreva sua demanda",
     "required_name": "O nome é obrigatório",
     "short_name": "Nome muito curto",
@@ -44,6 +47,6 @@
     "environment_variable_error": "Error sending email. Environment variables are not set correctly.",
     "error_email": "Erro ao enviar o formulário",
     "error_emailjs": "servidor fora do ar",
-    "copywriter": " Todos os direitos reservados"
+    "copywriter": "Todos os direitos reservados"
   }
 }
