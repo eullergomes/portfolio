@@ -1,10 +1,12 @@
-import { projectsData } from './Data';
+import { useProjectsData } from './Data';
 import WorkItems from './WorkItem';
 
 const Works = () => {
+  const projects = useProjectsData();
+
   return (
     <div className="work__container container grid">
-      {projectsData.map((project) => (
+      {projects.map((project) => (
         <WorkItems key={project.id} project={project} />
       ))}
     </div>
